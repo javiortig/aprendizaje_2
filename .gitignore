@@ -1,7 +1,8 @@
 *.zip
 trabajo de clase/clasificacion audio keras 4-2/archive/*
-
-
+*.csv
+*.h5
+*.json
 
 
 .DS_Store
