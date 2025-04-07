@@ -1,0 +1,15 @@
+----- Prompt 1 -----
+
+Analiza el contenido del siguiente PDF y extrae todos los detalles técnicos sobre GPT-4 Vision: https://cdn.openai.com/papers/GPTV_System_Card.pdf
+
+
+----- Prompt 2 -----
+
+Analiza el contenido del siguiente PDF, extrae las dos primeras referencias y busca en Internet el archivo PDF asociado con ellas. Analiza el archivo PDF de ambas referencias y proporcióname un resumen de su contenido en tres párrafos.
+
+PDF: https://cdn.openai.com/papers/GPTV_System_Card.pdf
+
+
+----- Prompt 3 -----
+
+Genérame una imagen de portada para un video de YouTube sobre Inteligencia Artificial Generativa. Utiliza Canva para el diseño.

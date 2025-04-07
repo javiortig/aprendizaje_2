@@ -1,0 +1,10 @@
+----- Prompt 1 ---simula contrato de arrendamiento---
+
+Filtra la siguiente información delimitada por triples dobles comillas para eliminar cualquier dato de identificación personal o información que pudiera utilizarse para identificar a la persona. Sustituye sus letras o números originales por el carácter "*".
+
+Información:
+"""
+De una parte, y como arrendador, persona física, D/Dña. LORENA MARTÍN, mayor de edad, domiciliado/a en C/ Inventada, N1, y con NIF nº 89734198F Y con datos de contacto a efectos de notificaciones: correo electrónico: lorena@gmail.com, y número de teléfono: 692348763
+De otra parte, y como arrendatario, D/Dña. MANUEL HERNANDEZ, mayor de edad, con NIF 708345712G, con domicilio a efectos de notificaciones en la vivienda objeto de arrendamiento. Y con datos de contacto a efectos de notificaciones: correo electrónico: manuelh@gmail.com, y número de teléfono: 634908765
+Ambas partes se reconocen la capacidad legalmente necesaria para el otorgamiento del presente contrato de arrendamiento.
+"""

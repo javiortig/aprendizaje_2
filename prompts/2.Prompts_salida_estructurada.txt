@@ -1,0 +1,9 @@
+----- Prompt 1 -----
+
+Quiero posicionar lo mejor posible en los principales buscadores un curso titulado:
+"""Curso de Blockchain y Web3"""
+Cuya descripción es:
+"""En este curso aprenderás todo lo necesario para convertirte en un experto en desarrollo de Smart Contracts y Web3."""
+¿Qué palabras clave debería utilizar?
+Quiero que generes un total de 20 palabras clave, el formato de salida debe ser un CSV con las siguientes claves:
+"""Palabra clave, Importancia"""

@@ -1,0 +1,21 @@
+----- Prompt 1 -- mejor con delimitadores para que no tenga que inferir el título y la descripción ---
+
+Quiero posicionar lo mejor posible en los principales buscadores un curso titulado: Curso de Blockchain y Web3, cuya descripción es: En este curso aprenderás todo lo necesario para convertirte en un experto en desarrollo de Smart Contracts y Web3. ¿Qué palabras clave debería utilizar?
+
+
+----- Prompt 2 -- para un retorno de línea usa shift+enter ---
+
+Quiero posicionar lo mejor posible en los principales buscadores un curso titulado:
+<titulo>Curso de Blockchain y Web3</titulo>
+Cuya descripción es:
+<descripción>En este curso aprenderás todo lo necesario para convertirte en un experto en desarrollo de Smart Contracts y Web3.</descripción>
+¿Qué palabras clave debería utilizar?
+
+
+----- Prompt 3 -----
+
+Quiero posicionar lo mejor posible en los principales buscadores un curso titulado:
+"""Curso de Blockchain y Web3"""
+Cuya descripción es:
+"""En este curso aprenderás todo lo necesario para convertirte en un experto en desarrollo de Smart Contracts y Web3."""
+¿Qué palabras clave debería utilizar?

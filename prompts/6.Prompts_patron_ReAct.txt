@@ -1,0 +1,19 @@
+----- Prompt 1 --sustituye el trabajo de las personas de nivel 1 en las empresas que analizan alertas de seguridad y las etiquetan como reales o no---
+
+Actúa como si fueses un experto en Ciberseguridad.
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: https://clientes.empresa1.com"
+Razonamiento: Voy a comenzar evaluando la URL de la alerta para identificar posibles elementos sospechosos desde el punto de vista de la Ciberseguridad.
+Acción: Analizo la URL que aparece en la alerta.
+Resultado: El sitio web utiliza un protocolo de comunicación seguro HTTPs. El sitio web tiene un nombre de dominio. El nombre de dominio parece de una entidad fiable.
+Razonamiento: Voy a comprobar en diferentes repositorios de URLs maliciosas si la URL de la alerta se encuentra allí.
+Acción: Consulto https://www.urlvoid.com/scan/clientes.empresa1.com
+Resultado: URLVoid indica que la URL no es maliciosa
+Razonamiento: La URL no parece maliciosa. La alerta se corresponde con un falso positivo.
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: https://bildy.es"
+
+
+----- Prompt 2 -----
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: http://15.30.12.134/programa.exe"

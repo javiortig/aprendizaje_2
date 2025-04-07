@@ -1,0 +1,64 @@
+----- Prompt 1 --sin ejemplos---
+
+Tu tarea es identificar si las siguientes reseñas son positivas, negativas o neutras.
+
+Reseña 1: """Me ha gustado mucho el curso. Ricardo expone los conceptos con mucha claridad."""
+
+Reseña 2: """El curso esta bien, aunque considero que hay algunos conceptos que pueden explicarse con mayor claridad."""
+
+Reseña 3: """No me ha gustado el curso. Los conceptos no están correctamente explicados."""
+
+
+----- Prompt 2 ---un ejemplo para que siga el mismo formato--
+
+Tu tarea es responder manteniendo un estilo consistente.
+
+<petición>: Hola, ¿qué tal estas?
+<traductor>: hello, how are you?, Hallo, wie geht es Ihnen?, Ciao, come stai?
+
+<petición>: Me llamo Ricardo
+<traductor>:
+
+
+----- Prompt 3 --sin ejemplos---
+
+Tu tarea es determinar si el siguiente correo electrónico es SPAM o Legítimo.
+
+Correo electrónico: """Hola:
+Te informamos de que ya hemos enviado tus productos. Dado que este pedido se encuentra en proceso de envío, ya no podrás realizar ninguna modificación.
+
+Tu pedido está en camino, y, por lo tanto, ya no se puede modificar. Si deseas devolver un producto de tu pedido o gestionar otros productos, visita Mis pedidos en Amazon.es"""
+
+Etiqueta:
+
+
+----- Prompt 4 --introduzco algunos ejemplos para que aprenda (es como si lo re-entrenáramos) ---
+
+Tu tarea es determinar si el siguiente correo electrónico es SPAM o Legítimo.
+
+Correo electrónico: """Hola:
+Te informamos de que ya hemos enviado tus productos. Dado que este pedido se encuentra en proceso de envío, ya no podrás realizar ninguna modificación.
+
+Tu pedido está en camino, y, por lo tanto, ya no se puede modificar. Si deseas devolver un producto de tu pedido o gestionar otros productos, visita Mis pedidos en Amazon.es"""
+Etiqueta: SPAM
+
+Correo electrónico: """Gracias por tu pedido. Te mandaremos otro e-mail cuando enviemos tu(s) producto(s). La fecha estimada de entrega se indica a continuación. Visita Mis pedidos en Amazon.es para consultar el estado de tu pedido o realizar cambios."""
+Etiqueta: SPAM
+
+Correo electrónico: """Hola Ricardo:
+
+Hay una nueva respuesta a "Mosquitto installation error" en tu curso "Curso completo de Web3"
+
+Utiliza el botón de abajo para ver la respuesta e indicar si ha sido útil. Allí encontrarás un enlace para "dejar de seguir" si prefieres no recibir notificaciones de respuestas futuras."""
+Etiqueta: Legítimo
+
+Correo electrónico: """Hola Ricardo,
+Tu pedido que contiene Moleskine Daily Planner... está en proceso de entrega.
+Si deseas indicarnos un lugar seguro para dejar tu paquete, por favor actualiza las instrucciones de entrega visitando nuestra página Localiza tu paquete."""
+Etiqueta: SPAM
+
+Correo electrónico: """Hola:
+Te informamos de que ya hemos enviado tus productos. Dado que este pedido se encuentra en proceso de envío, ya no podrás realizar ninguna modificación.
+
+Tu pedido está en camino, y, por lo tanto, ya no se puede modificar. Si deseas devolver un producto de tu pedido o gestionar otros productos, visita Mis pedidos en Amazon.es"""
+Etiqueta:

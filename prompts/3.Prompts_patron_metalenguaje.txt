@@ -1,0 +1,52 @@
+----- Prompt 1 -----
+
+Tu tarea es representar en pseudocódigo un programa informático que voy a describir con lenguaje natural. Para ello voy a definir las reglas y símbolos del pseudocódigo.
+
+Las palabras clave del pseudocódigo que debes utilizar se encuentran delimitadas por dobles comillas. A continuación de las plabras clave se encuentra una descripción de su significado:
+"""
+1. "//": This keyword used to represent a comment.
+2. "BEGIN", "END": Begin is the first statement and end is the last statement.
+3. "INPUT", "GET", "READ": The keyword is used to inputting data.
+4. "COMPUTE", "CALCULATE": used for calculation of the result of the given expression. 
+5. "ADD", "SUBTRACT", "INITIALIZE": used for addition, subtraction and initialization.
+6. "OUTPUT", "PRINT", "DISPLAY": It is used to display the output of the program.
+7. "IF", "ELSE", "ENDIF": used to make decision.
+8. "WHILE", "ENDWHILE": used for iterative statements.
+9. "FOR", "ENDFOR": Another iterative incremented/decremented tested automatically.
+"""
+Por otro lado, a continuación puedes encontrar entre dobles comillas la sintaxis para las principales estructuras de control de flujo de ejecución de un programa:
+"""
+1. Syntax for if else:
+IF (condition)THEN       
+statement   
+...                    
+ELSE       
+statement   
+...                    
+ENDIF
+"""
+"""
+2. Syntax for For:         
+FOR( start-value to end-value) DO   
+statement   
+...                    
+ENDFOR
+"""
+"""
+3. Syntax for While:
+WHILE (condition) DO  
+statement   
+...                    
+ENDWHILE  
+"""
+Cuando termines de aprender el pseudocódigo, pregúntame por la descripción del programa que debes implementar.
+
+
+----- Prompt 2 -----
+
+Descripción del programa informático:
+"""
+Se recibe un listado de 10 números enteros por parte del usuario. El programa debe ordenador esta lista de números de menor a mayor.
+"""
+
+-- Le podría pedir que programe ese pseudocódigo en Python por ejemplo y comprobarlo en online-python.com ---

@@ -1,0 +1,100 @@
+----- Prompt 1 --https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_cards---
+--- Para este tipo de problemas los LLMs suelen equivocarse si no se les proporciona un buen prompt ---
+
+Evalúa el siguiente enunciado y decide si la solución planteada es correcta o no lo es.
+
+Enunciado:
+"""
+Debe desarrollarse una tarjeta identificativa personal utilizando HTML y CSS. Lo primero que debe aparecer en la tarjeta es la imagen de una persona. Lo segundo que debe aparecer es su puesto en la empresa. Lo último que debe aparecer es el nombre de la persona.
+"""
+
+Solución planteada:
+"""
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Card</h2>
+
+<div class="card">
+  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+</body>
+</html> 
+"""
+
+
+----- Prompt 2 -----
+
+Evalúa el siguiente enunciado y decide si la solución planteada es correcta o no lo es.
+
+Para resolver este problema, realiza las siguientes acciones:
+1. Realiza un análisis exhaustivo de los requisitos que se plantean en el enunciado y extráelos. Proporciona un razonamiento detallado del motivo por el que has seleccionado esos requisitos.
+2. Realiza un análisis exhaustivo de la solución planteada, y extrae los elementos que pretenden cumplir con los requisitos del enunciado. Proporciona un razonamiento detallado del motivo por el que has seleccionado esos requisitos.
+3. Compara los elementos extraídos de la solución propuesta con los requisitos del enunciado y determina si es correcto. Proporciona un razonamiento muy detallado del motivo por el que has concluido que la solución propuesta cumple o no con el requisito planteado en el enunciado.
+
+Enunciado:
+"""
+Debe desarrollarse una tarjeta identificativa personal utilizando HTML y CSS. Lo primero que debe aparecer en la tarjeta es la imagen de una persona. Lo segundo que debe aparecer es su puesto en la empresa. Lo último que debe aparecer es el nombre de la persona.
+"""
+
+Solución planteada:
+"""
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+</style>
+</head>
+<body>
+
+<h2>Card</h2>
+
+<div class="card">
+  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>John Doe</b></h4> 
+    <p>Architect & Engineer</p> 
+  </div>
+</div>
+
+</body>
+</html> 
+"""

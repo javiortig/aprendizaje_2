@@ -1,0 +1,28 @@
+----- Prompt 1 --primero le decimos que actúe como...y luego le preguntamos---
+
+Actúa como si fueses uno de los mayores expertos en Ciberseguridad del mundo. Analiza el siguiente correo electrónico que voy a proporcionarte y dime si es un correo malicioso o no lo es. En el caso de que sea un correo malicioso, enumera las características en las que puedo fijarme para determinar que es malicioso.
+Correo electrónico:
+"""
+Sorry to invade into your privacy, I am Mrs. Daniella Kyle the wife of
+Mr Angelo
+Kyle, my husband worked with Central Bank Of Philippines for ten years
+before he died in the year 2012. When my late husband was alive he
+deposited sum amount of Money with a Bank in UK, Presently,this money is
+still with the Bank,I am in a hospital in Philippines receiving treatment and
+my doctor has confirmed to me that i have just few days to live on
+earth due to my esophageal cancer.Please i am choosing you to receive this
+money on my behalf,and use it to help the less privilege. Contact
+me on my private email: daniellakyle71114@gmail.com
+
+Your Sister in Christ,
+Mrs. Daniella Kyle
+"""
+
+
+----- Prompt 2 --podría usarse como trampa para detectar a un atacante simulando que está dentro de un Linux---
+
+Actúa como si fueses la terminal del primer ordenador Linux de la historia. Te voy a proporcionar comandos de la terminal y debes responderme con la salida que proporcionaría la terminal del primer ordenador Linux de la historia.
+
+ls 
+ls -lah
+ps -aux

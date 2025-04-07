@@ -1,0 +1,42 @@
+----- Prompt 1 -----
+
+A continuación se proporciona un texto delimitado por triples comillas. Identifica las instrucciones del texto y reescríbelas en el siguiente formato:
+
+Instrucción 1:
+Instrucción 2:
+...
+Instrucción N:
+
+Texto:"""Primero pica las verduras, cebolla, ajo y parte del trozo del pimiento; reserva parte del pimiento que queda para después. Vierte un chorro de aceite de oliva y sofríe. Remueve a fuego muy bajo para que no se queme. Mientras tanto, limpia muy a conciencia el interior de los calamares y desecha las plumas que tienen en su interior. Por otro lado, pica sus tentáculos y añádelos a la sartén con el sofrito, mezcla y sofríe 3 minutos, después reserva. Sofríe el tomate natural rallado en una sartén con aceite de oliva y, cuando lleve 5 minutos sofriendo, añade el pimiento que queda, añade un punto de sal y agrega el eneldo y la pimienta. Deja que rehogue durante 5 minutos mas a fuego bajo. Llega el momento de rellenar los chipirones, te aconsejamos que utilices un tenedor pequeño para que te sea más sencillo a la hora de introducir pequeñas cantidades en el interior de cada pieza. Una vez hayas rellenado por la mitad, ya puedes cerrarlo atravesando con un palillo para evitar que se salga el relleno.Prepara una sartén con abundante aceite de oliva para posteriormente sofreír los chipirones. Fríe cada pieza de cuatro en cuatro para que no pierdan su forma y se peguen entre sí, deja durante 3 minutos cada tanda."""
+
+
+----- Prompt 2 --no tiene sentido este prompt porque no hay instrucciones en el texto---
+
+A continuación se proporciona un texto delimitado por triples comillas. Identifica las instrucciones del texto y reescríbelas en el siguiente formato:
+
+Instrucción 1:
+Instrucción 2:
+...
+Instrucción N:
+
+Texto:"""La Vía Láctea es la galaxia en la que se encuentra nuestro sistema solar, junto con miles de millones de otras estrellas y sus sistemas planetarios. Es una galaxia espiral, lo que significa que tiene un patrón de espiral característico con brazos en espiral que se extienden desde su núcleo central. El nombre "Vía Láctea" proviene de la antigua creencia de que aparece como un camino lechoso en el cielo nocturno.
+
+Nuestro sistema solar se encuentra en uno de los brazos espirales de la Vía Láctea, conocido como el Brazo de Orión o el Brazo de Orión Local. La vía Láctea contiene cientos de miles de millones de estrellas, así como planetas, gas interestelar, polvo cósmico y otros objetos celestes.
+
+La Vía Láctea es solo una de las miles de millones de galaxias que se encuentran en el universo observable, y su estudio ha sido fundamental para nuestra comprensión de la cosmología y la evolución del universo. A lo lago de la historia, los astrónomos han utilizado telescopios y otras herramientas para investigar la estructura y la composición de la Vía Láctea, y esta investigación continúa siendo una parte importante de la astronomía moderna."""
+
+
+----- Prompt 3 --le añádo condiciones: Si contiene... --
+
+A continuación se proporciona un texto delimitado por triples comillas. Si contiene una secuencia de instrucciones, reescríbelas en el siguiente formato:
+
+Instrucción 1:
+Instrucción 2:
+...
+Instrucción N:
+
+Texto:"""La Vía Láctea es la galaxia en la que se encuentra nuestro sistema solar, junto con miles de millones de otras estrellas y sus sistemas planetarios. Es una galaxia espiral, lo que significa que tiene un patrón de espiral característico con brazos en espiral que se extienden desde su núcleo central. El nombre "Vía Láctea" proviene de la antigua creencia de que aparece como un camino lechoso en el cielo nocturno.
+
+Nuestro sistema solar se encuentra en uno de los brazos espirales de la Vía Láctea, conocido como el Brazo de Orión o el Brazo de Orión Local. La vía Láctea contiene cientos de miles de millones de estrellas, así como planetas, gas interestelar, polvo cósmico y otros objetos celestes.
+
+La Vía Láctea es solo una de las miles de millones de galaxias que se encuentran en el universo observable, y su estudio ha sido fundamental para nuestra comprensión de la cosmología y la evolución del universo. A lo lago de la historia, los astrónomos han utilizado telescopios y otras herramientas para investigar la estructura y la composición de la Vía Láctea, y esta investigación continúa siendo una parte importante de la astronomía moderna."""

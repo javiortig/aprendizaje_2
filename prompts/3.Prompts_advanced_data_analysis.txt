@@ -1,0 +1,73 @@
+----- Prompt 1 -----
+
+Teniendo en cuenta el siguiente conjunto de datos en formato CSV, que contiene las siguientes características de entrada:
+"""
+['duration',
+ 'protocol_type',
+ 'service',
+ 'flag',
+ 'src_bytes',
+ 'dst_bytes',
+ 'land',
+ 'wrong_fragment',
+ 'urgent',
+ 'hot',
+ 'num_failed_logins',
+ 'logged_in',
+ 'num_compromised',
+ 'root_shell',
+ 'su_attempted',
+ 'num_root',
+ 'num_file_creations',
+ 'num_shells',
+ 'num_access_files',
+ 'num_outbound_cmds',
+ 'is_host_login',
+ 'is_guest_login',
+ 'count',
+ 'srv_count',
+ 'serror_rate',
+ 'srv_serror_rate',
+ 'rerror_rate',
+ 'srv_rerror_rate',
+ 'same_srv_rate',
+ 'diff_srv_rate',
+ 'srv_diff_host_rate',
+ 'dst_host_count',
+ 'dst_host_srv_count',
+ 'dst_host_same_srv_rate',
+ 'dst_host_diff_srv_rate',
+ 'dst_host_same_src_port_rate',
+ 'dst_host_srv_diff_host_rate',
+ 'dst_host_serror_rate',
+ 'dst_host_srv_serror_rate',
+ 'dst_host_rerror_rate',
+ 'dst_host_srv_rerror_rate',
+ 'class']
+"""
+Lee el conjunto de datos con Pandas añadiendo el nombre de cada columna y muéstrame una tabla con 10 ejemplos.
+
+
+----- Prompt 2 -----
+
+Programa un histograma con los valores que recibe la característica "service" y el número de valores que hay de cada tipo.
+
+
+----- Prompt 3 -----
+
+Calcula la correlación de todas las características de entrada con la característica "class". Elimina del conjunto de datos aquellas características de entrada cuya correlación sea baja.
+
+
+----- Prompt 4 -----
+
+Permíteme descargar el nuevo conjunto de datos con un número de características reducido en formato CSV
+
+
+----- Prompt 5 -----
+
+Implementa un programa en Python que ordene una lista de valores.
+
+
+----- Prompt 6 -----
+
+Ejecuta el programa anterior para la siguiente lista de valores: [4, 6, 1, 3, 2]

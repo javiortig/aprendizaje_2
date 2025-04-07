@@ -1,0 +1,34 @@
+----- Prompt 1 --le digo explícitamente que lo busque en Internet---
+
+Voy a estar en Madrid desde el día 26 de octubre hasta el día 29. ¿Podrías diseñarme un plan de tareas que podría realizar todos estos días? Incluye eventos importantes que vayan a ocurrir en esas fechas y los restaurantes más recomendados actualmente donde podría comer y cenar en función de la ubicación donde vaya a estar. Busca en Internet para obtener la información más actualizada.
+
+----- Prompt 2 -----
+
+Actúa como si fueses un experto en Ciberseguridad. Sigue el patrón que se indica a continuación y realiza búsquedas en Internet cuando sea necesario.
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: https://clientes.empresa1.com"
+Razonamiento: Voy a comenzar evaluando la URL de la alerta para identificar posibles elementos sospechosos desde el punto de vista de la Ciberseguridad.
+Acción: Analizo la URL que aparece en la alerta.
+Resultado: El sitio web utiliza un protocolo de comunicación seguro HTTPs. El sitio web tiene un nombre de dominio. El nombre de dominio parece de una entidad fiable.
+Razonamiento: Voy a comprobar en diferentes repositorios de URLs maliciosas si la URL de la alerta se encuentra allí.
+Acción: Consulto https://www.urlvoid.com/scan/clientes.empresa1.com
+Resultado: URLVoid indica que la URL no es maliciosa
+Razonamiento: La URL no parece maliciosa. La alerta se corresponde con un falso positivo.
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: https://udemy.com"
+
+----- Prompt 3 -----
+
+Tarea: Identifica si la siguiente alerta de seguridad es un verdadero positivo o un falso positivo: "Alerta de seguridad: Se ha identificado el acceso a una URL potencialmente maliciosa. La URL identificada es: http://102.33.40.201:40311/mozi.m"
+
+----- Prompt 4 -----
+
+Actúa como si fueses el mayor experto en diseño de páginas web del mundo. Quiero que realices un análisis exhaustivo de la siguiente página web y me indiques los puntos de mejora para que tenga mayor retención de audiencia y mayor conversión de venta. Página web: https://engineer.education
+
+----- Prompt 5 -----
+
+Extrae el nombre de todos los cursos y la descripción que aparece. Proporciona la respuesta en el siguiente formato:
+Nombre Curso 1: Descripción Curso 1
+Nombre Curso 2: Descripción Curso 2
+...
+Nombre Curso N: Descripción Curso N

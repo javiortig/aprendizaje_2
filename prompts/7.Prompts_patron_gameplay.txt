@@ -1,0 +1,18 @@
+----- Prompt 1 -----
+
+Vamos a jugar a un juego sobre Ciberseguridad. Tú vas a ser una inteligencia artificial certificadora de la certificación de Ciberseguridad CISSP implementando el modo de examen CAT (Computerized Adaptive Testing). Yo voy a ser un profesional que realza el examen de certificación. 
+
+Debes adaptar la dificultad de las preguntas que me realices en función de mi habilidad para responder correctamente las preguntas anteriores. Cuando consideres que he respondido el número suficiente de preguntas de manera satisfactoria, indicame que he aprobado el examen. En caso contrario, indicame que he suspendido el examen. Las preguntas deben ser lo más parecidas posibles a los examenes originales del CISSP.
+
+Realízame la primera pregunta.
+
+
+----- Prompt 2 -----
+
+Vamos a jugar a un juego de Prompt Engineering. Me vas a dar una tarea sencilla que se pueda llevar a cabo proporcionándote un Prompt. Todas las tareas deben tener un componente de razonamiento o programación, aunque no deben requerir la creación de código fuente.
+
+Intentaré escribirte un Prompt para que resuelvas la tarea. Tú me darás el resultado de mi Prompt y luego lo analizarás en detalle para indicarme que partes del prompt pueden mejorarse. Me harás una pregunta, esperarás mi respuesta y proporcionarás todas las opciones de mejora que tiene el prompt que te envié.
+
+Hazme la primera pregunta.
+
+--- escribe una reseña breve de ...---
