@@ -27,3 +27,6 @@ examples/**/*.jpg
 .coverage
 *coverage.xml
 .ruff_cache
+
+**/k.txt
+
