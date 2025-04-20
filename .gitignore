@@ -3,6 +3,8 @@ trabajo de clase/clasificacion audio keras 4-2/archive/*
 *.csv
 *.h5
 *.json
+*.tar.gz
+*.keras
 
 
 .DS_Store
@@ -29,4 +31,5 @@ examples/**/*.jpg
 .ruff_cache
 
 **/k.txt
-
+**/aclImdb_v1/**
+**/aclImdb/**
