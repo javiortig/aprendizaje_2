@@ -1,11 +1,12 @@
 ################################################################################
-# Javier Orti García. Chatbot para un restaurante ficticio llamado El Puntillo
+# Javier Orti García. Chatbot para un restaurante ficticio llamado La Chamaca
 # Este chatbot permite interactuar con los clientes de un restaurante y recopilar los pedidos de comida que realicen para entregar a domicilio o recoger en las instalaciones.
 # El chatbot utiliza un LLM para generar respuestas a las preguntas de los usuarios, según las especificaciones del restaurante.
 # Para terminar la conversacion, basta con decirle al bot que no necesitas más ayuda, o que has terminado de hacer el pedido. También puedes usar el botón de terminar chat.
 ################################################################################
 from openai import OpenAI
 import panel as pn
+import json
 pn.extension()
 
 
@@ -22,9 +23,9 @@ class Chatbot:
         """
         self.client = client
         self.ending_message = "Gracias por confiar en nosotros."
-        self.welcome_message = "Bienvenido al restaurante El Puntillo. ¿En que podemos ayudarte?"
+        self.welcome_message = "Bienvenido a La Chamaca. ¿En que podemos ayudarte?"
         self.messages =  [
-        {'role': 'system', 'content': f'Eres un ChatBot ChatBot que permite interactuar con los clientes de un restaurante y recopilar los pedidos de comida que realicen para entregar a domicilio o recoger en las instalaciones. Si consideras que el usuario ha terminado con la conversaci n, responde exactamente con "{self.ending_message}"'},
+        {'role': 'system', 'content': f'Eres un ChatBot ChatBot que permite interactuar con los clientes de un restaurante mexicano situado en España para recopilar los pedidos que realicen para entregar a domicilio o recoger en las instalaciones. Siempre que hables de productos del restaurante, recuerda dar el precio. Si consideras que el usuario ha terminado con la conversación, responde exactamente con "{self.ending_message}"'},
         {'role': 'assistant', 'content': self.welcome_message}
         ]
 
@@ -43,7 +44,7 @@ class Chatbot:
         Devuelve:
             str: La respuesta generada.
         """
-        # TODO: control de errores
+        # TODO: control de errores a la hora de llamar a la API
         answer = self.client.chat.completions.create(
             model=model,
             messages=self.messages + [{"role": "user", "content": newPrompt}],
@@ -54,6 +55,47 @@ class Chatbot:
         self.messages.append({"role": "user", "content": newPrompt})
         self.messages.append({"role": "assistant", "content": answer.choices[0].message.content})
         return answer.choices[0].message.content
+    
+    def extract_order_data(self, filename="pedido.json"):
+        """
+        Llama al modelo para que devuelva los datos estructurados del pedido en JSON.
+
+        Devuelve:
+            filename (str): nombre del archivo JSON a guardar.
+        """
+
+        print("Extrayendo datos del pedido...")
+
+        prompt = (
+            "Por favor, extrae la información del pedido realizado en el siguiente formato JSON. Recuerda que cada producto debe contener su nombre y su precio:\n"
+            "{\n"
+            '  "entrantes": [...],\n'
+            '  "tacos": [...],\n'
+            '  "burritos": [...],\n'
+            '  "otros": [...],\n'
+            '  "postres": [...],\n'
+            '  "bebidas": [...],\n'
+            '  "numero_telefono": "..." \n,'
+            '  "direccion_entrega": "..." \n'
+            "}\n"
+            "En caso de que algún campo no se haya mencionado, déjalo como lista vacía o 'NA'. Recuerda que este JSON va a ser leido directamente en python mediante json.dump, así que adecua el formato y respondeme exclusivamente con el JSON. No añadas nada más, ni la palabra json del formato"
+        )
+        try:
+            response = self.client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=self.messages + [{"role": "user", "content": prompt}],
+                temperature=0
+            )
+            json_text = response.choices[0].message.content.strip()
+            print("Respuesta del modelo:", json_text)
+
+            # Intenta convertir el contenido a dict y guardarlo como JSON real
+            pedido_data = json.loads(json_text)
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump(pedido_data, f, ensure_ascii=False, indent=4)
+
+        except Exception as e:
+            print("Error al extraer los datos del pedido:", e)
     
     def is_chat_ended(self):
         """
@@ -173,11 +215,13 @@ class ChatbotGUI:
 
     def disable_chat(self):
         """
-        Desactiva los elementos de entrada y el botón de conversación.
+        Desactiva los elementos de entrada y el botón de conversación. Finalmente extrae los datos del pedido.
         """
         self.inp.disabled = True
         self.button_conversation.disabled = True
         self.button_end_chat.disabled = True
+
+        self.chatbot.extract_order_data()
 
     def end_chat(self, event=None):
         """
