@@ -7,7 +7,30 @@
 from openai import OpenAI
 import panel as pn
 import json
-pn.extension()
+pn.extension(raw_css=[
+    """
+    .chat-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: 1em;
+    }
+
+    .chat-container {
+        flex: 1;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 1em;
+        background-color: #fdfdfd;
+        border-radius: 8px;
+        margin-bottom: 1em;
+    }
+
+    .chat-input-row {
+        margin-bottom: 0.5em;
+    }
+    """
+])
 
 
 
@@ -44,17 +67,23 @@ class Chatbot:
         Devuelve:
             str: La respuesta generada.
         """
-        # TODO: control de errores a la hora de llamar a la API
-        answer = self.client.chat.completions.create(
-            model=model,
-            messages=self.messages + [{"role": "user", "content": newPrompt}],
-            temperature=temperature,
-            top_p=top_p,
-            frequency_penalty=frequency_penalty
-        )
-        self.messages.append({"role": "user", "content": newPrompt})
-        self.messages.append({"role": "assistant", "content": answer.choices[0].message.content})
-        return answer.choices[0].message.content
+        try:
+            answer = self.client.chat.completions.create(
+                model=model,
+                messages=self.messages + [{"role": "user", "content": newPrompt}],
+                temperature=temperature,
+                top_p=top_p,
+                frequency_penalty=frequency_penalty
+            )
+            self.messages.append({"role": "user", "content": newPrompt})
+            self.messages.append({"role": "assistant", "content": answer.choices[0].message.content})
+            return answer.choices[0].message.content
+        except Exception as e:
+            error_msg = f"⚠️ Lo siento, ha ocurrido un error al procesar tu mensaje. Por favor, inténtalo de nuevo más tarde"
+            print("completion_call error: ", e)
+            self.messages.append({"role": "user", "content": newPrompt})
+            self.messages.append({"role": "assistant", "content": error_msg})
+            return error_msg
     
     def extract_order_data(self, filename="pedido.json"):
         """
@@ -159,9 +188,14 @@ class ChatbotGUI:
             width=150
         )
         self.chat_display = pn.pane.Markdown(
-            self.chatbot.welcome_message,
-            sizing_mode="stretch_both",
-            height=400
+        self.chatbot.welcome_message,
+        sizing_mode="stretch_width"
+        )
+
+        self.chat_display_container = pn.Column(
+        self.chat_display,
+        sizing_mode="stretch_width",
+        css_classes=["chat-container"]
         )
 
         # Eventos
@@ -170,16 +204,18 @@ class ChatbotGUI:
 
         # Interfaz de mensajes
         input_row = pn.Row(
-            self.inp,
-            self.button_conversation,
-            sizing_mode="stretch_width"
+        self.inp,
+        self.button_conversation,
+        sizing_mode="stretch_width",
+        css_classes=["chat-input-row"]
         )
 
         self.dashboard = pn.Column(
-            self.chat_display,
+            self.chat_display_container,
             input_row,
             self.button_end_chat,
-            sizing_mode="stretch_width"
+            sizing_mode="stretch_width",
+            css_classes=["chat-wrapper"]
         )
 
     def send_message(self, event=None):
